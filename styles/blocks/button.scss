@@ -1,0 +1,45 @@
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 32px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  transition: all var(--transition-duration) ease-in-out;
+
+  &:hover {
+    background-color: white;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  &:hover > svg {
+    transform: rotate(180deg);
+    translate: 0 -2px;
+  }
+
+  &--signup {
+    padding: 12px 24px;
+    background-color: #d1fae5;
+    color: #047857;
+    border: none;
+  }
+  &--signup:hover {
+    color: #d1fae5;
+    background-color: #047857;
+  }
+}
+
+.accent-button {
+  padding: 12px 16px;
+  border-radius: 32px;
+  color: white;
+  background-color: var(--dark-green);
+  border: 1px solid transparent;
+  &:hover {
+    background-color: white;
+    color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+  }
+}

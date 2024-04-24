@@ -1,0 +1,120 @@
+.tips {
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 68px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: url("./images/tips/shadow1.svg");
+      top: -284px;
+      left: -170px;
+      width: 438px;
+      height: 494px;
+      z-index: -1;
+    }
+    &::after {
+      position: absolute;
+      content: url("./images/tips/shadow2.svg");
+      top: -27px;
+      left: -170px;
+      width: 438px;
+      height: 494px;
+      z-index: -1;
+    }
+  }
+
+  &__small {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+.tip {
+  display: flex;
+  column-gap: 32px;
+  &__info {
+    font-size: 14px;
+
+    &-employee {
+      position: relative;
+      display: flex;
+      align-items: start;
+      max-height: 44px;
+      & > img {
+        position: relative;
+        top: -22px;
+        left: -22px;
+      }
+      &-name {
+        color: #3c4563;
+        width: fit-content;
+        position: relative;
+        left: -40px;
+        top: 5px;
+      }
+    }
+    &-text {
+      font-size: 18px;
+      color: #1b1c57;
+      margin-bottom: 16px;
+    }
+    &-footer {
+      display: flex;
+      column-gap: 12px;
+      color: #888b97;
+    }
+  }
+  &__wide {
+    &-image {
+      margin-bottom: 24px;
+    }
+    &-info {
+      &-employee {
+        display: flex;
+        position: relative;
+        align-items: start;
+        max-height: 44px;
+        & > img {
+          position: relative;
+          top: -22px;
+          left: -22px;
+        }
+        &-name {
+          color: #3c4563;
+          width: fit-content;
+          position: relative;
+          left: -40px;
+          top: 5px;
+        }
+      }
+      &-text {
+        font-size: 24px;
+        color: var(--primary-color);
+        margin-bottom: 12px;
+      }
+      &-subtext {
+        font-size: 14px;
+        color: #626687;
+        margin-bottom: 16px;
+      }
+      &-footer {
+        font-size: 14px;
+        display: flex;
+        column-gap: 12px;
+        color: #888b97;
+      }
+    }
+  }
+}
+
+.more-article__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 42px;
+}

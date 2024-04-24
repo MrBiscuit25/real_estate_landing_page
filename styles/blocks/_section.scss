@@ -1,0 +1,12 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: 600;
+  &::before {
+    content: "— " attr(data-title);
+    color: #f59e0b;
+    font-size: 14px;
+  }
+}

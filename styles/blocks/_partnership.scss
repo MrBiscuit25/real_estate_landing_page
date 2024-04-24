@@ -1,0 +1,16 @@
+.partnership {
+  &__title {
+    line-height: 1.3;
+    color: var(--secondary-sub-color);
+  }
+  &__icons {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
